@@ -2,6 +2,12 @@
   font-family: Arial;
 }
 
+body {
+  background-color:whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   background-color: #24232b;
   padding: 24px;
@@ -66,4 +72,59 @@ button {
   width: 100%;
   font-size: 20px;
   padding: 20px;
+}
+
+.main-container {
+  background-color: #2a8b8b;
+  width: 50rem;
+  height: 25rem;
+  margin: auto;
+  margin-top:5rem;
+  border-radius: 5rem;
+}
+
+.btn {
+  height: 30px;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.header-login {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+ width: 80%;
+}
+.cont-body {
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  width: 75%;
+  margin-left: 5rem;
+  padding: 5px;
+}
+
+.btn-login {
+  background-color: black;
+  width: 78%;
+  margin-left: 5rem;
+  margin-top: 3rem;
+}
+
+.main-container-signup {
+   background-color: #2a8b8b;
+  width: 50rem;
+  height: 30rem;
+  margin: auto;
+  margin-top:5rem;
+  border-radius: 5rem;
+}
+
+.errmsg {
+  color: red;
+  padding-bottom: 5px;
 }
