@@ -11,6 +11,7 @@ body {
 .container {
   background-color: #24232b;
   padding: 24px;
+  margin: 5rem;
 }
 
 .header {
@@ -92,6 +93,7 @@ button {
 .header-login {
   display: flex;
   justify-content: center;
+  text-transform: uppercase;
 }
 
 .center {
@@ -124,7 +126,44 @@ button {
   border-radius: 5rem;
 }
 
+.logout {
+  display: flex;
+  justify-content: right;
+  padding-bottom: 10px;
+}
+
+.main {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.table {
+  display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 1rem;
+}
+@media screen and (max-width:768px){
+ .table {
+  display: grid !important;
+  grid-template-columns: auto auto auto !important;
+} 
+}
+.pswrd-holder {
+  margin: 5px;
+  padding: 4px;
+  width: fit-content;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: .5rem;
+  color: rgb(115, 0, 255);
+  background-color: rgb(38, 53, 53);
+}
+
 .errmsg {
   color: red;
   padding-bottom: 5px;
+}
+.errmsg1 {
+  color: red;
 }

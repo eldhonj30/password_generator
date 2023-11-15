@@ -3,7 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import connectDB from "./dbConfig.js";
-import userRoutes from "./routes/userRoutes.js"
+import userRoutes from "./routes/userRoutes.js";
 
 dotenv.config();
 connectDB();
@@ -21,10 +21,10 @@ app.use(
   })
 );
 
-app.use("/",userRoutes);
+app.use("/user", userRoutes);
 
+app.get("/test", (req, res) => {
+  res.json("test ok");
+});
 
-
-app.listen(port, () =>
-  console.log(`server started on port ${port}`)
-);
+app.listen(port, () => console.log(`server started on port ${port}`));

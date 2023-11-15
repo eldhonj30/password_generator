@@ -3,6 +3,11 @@ import {Route, Routes} from "react-router-dom"
 import PasswordScreen from "./screens/PasswordScreen";
 import LoginScreen from "./screens/LoginScreen";
 import SignuUp from "./screens/SignuUp";
+import axios from "axios";
+
+axios.defaults.baseURL = "http://localhost:4000" 
+axios.defaults.withCredentials = true;
+
 
 function App() {
  
